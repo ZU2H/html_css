@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Tomorrow:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,9 +8,9 @@
 }
 
 li, a, button {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -18,11 +19,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%;
+    padding: 8px 10%;
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo_buah {
@@ -40,7 +41,7 @@ header {
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 25px;
 }
 
 .nav_links li a {
@@ -65,13 +66,55 @@ button :hover{
 }
 
 .crop {
-    width: 1280px;
-    height: 610px;
+    width: auto;
+    height: 700px;
     overflow: hidden;
 }
 
-.home_title img{
+.home_title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #a94400;
+    padding: 4rem 4rem;
+}
+
+.home_title h1 {
+    font-size: 50px;
+}
+
+.home_title p {
+    font-size: 22px;
+    margin: 1rem 4rem;
+}
+
+
+.isi_buah {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.isi_buah img {
+    margin-left: 4rem;
+    margin-right: 2rem;
+    width: 500px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
+}
+
+.isi_buah p {
+    color: #a94400;
+    font-size: 20px;
+}
+
+.isi_buah a {
+    float: right;
+    padding-top: 5px;
+    padding-right: 2rem;
+    color: #fada22;
+    cursor: pointer;
+}
+
+.isi_buah a:hover {
+    color: #a94400;
 }
