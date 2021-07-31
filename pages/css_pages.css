@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Tomorrow:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_bar ul li, .menu_bar a, .menu_bar button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo_buah {
+    cursor: pointer;
+    color: #a94400;
+}
+
+.menu_bar {
+    background-color: #fada22;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0;
+}
+
+.nav_links li a:hover {
+    color: #a94400;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: rgba(169, 39, 0, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button :hover{
+    background-color: rgba(169, 39, 0, 0.8);
+}
+
+.crop {
+    width: auto;
+    height: 700px;
+    overflow: hidden;
+}
+
+.home_title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #a94400;
+    padding: 3rem 4rem;
+}
+
+.home_title h1 {
+    font-size: 50px;
+}
+
+.isi {
+    font-family: 'Comic Neue', cursive;
+    color: #a94400;
+    font-size: 28px;
+    padding: 0rem 4rem;
+}
+
+.isi h4 {
+    font-size: 35px;
+    padding-bottom: 1%;
+}
+
+ol {
+    padding-left: 3rem;
+}
+
+.buah_kiri {
+    display: inline-block;
+}
+
+.buah_kiri img, .buah_kanan img {
+    margin-right: 2rem;
+    width: 500px;
+    display: block;
+    float: left;
+}
+
+.buah_kanan img {
+    margin-right: 4rem;
+    width: 280px;
+    float: right;
+}
+
+.buah_tabel table{
+    border: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead {
+    background-color: #fada22;
+}
+
+td, .buah_tabel h4 {
+    text-align: center;
+    padding: 1rem;
+}
+
+td {
+    background-color: #fff4b6;
+}
+
+.isi.pemesanan button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px 9rem;
+    background-color: rgba(169, 39, 0, 0.8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.isi.pemesanan :any-link {
+    color: #edf0f1;
+    text-decoration: none;
+    font-size: 25px;
+}
