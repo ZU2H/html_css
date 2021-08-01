@@ -152,3 +152,107 @@ td {
     text-decoration: none;
     font-size: 25px;
 }
+
+.wrapper {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    max-width: 500px;
+    width: 100%;
+    background: #fada22ed;
+    margin: 150px auto;
+    padding: 30px;
+}
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #a94400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .buah_form {
+    width: 100%;
+}
+
+.wrapper .buah_form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+} 
+
+.wrapper .buah_form .input_field label {
+    width: 200px;
+    color: #a94400;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.wrapper .buah_form .input_field .input,
+.wrapper .buah_form .input_field .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #edf0f1;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .buah_form .input_field .textarea {
+    resize: none;
+    height: 125px;
+}
+
+.wrapper .buah_form .input_field .select_field {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.wrapper .buah_form .input_field .select_field select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #edf0f1;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .buah_form .input_field .select_field:before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #a94400 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.wrapper .buah_form .input_field .input:focus,
+.wrapper .buah_form .input_field .textarea:focus,
+.wrapper .buah_form .input_field select:focus {
+    border:  1px solid #a94400;
+}
+
+.wrapper .buah_form .input_field .tombol {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 17px;
+    border: 0;
+    background: #a94400;
+    color: #edf0f1;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+}
+.wrapper .buah_form .input_field:last-child {
+    margin-bottom: 0;
+}
+
+.wrapper .buah_form .input_field .tombol:hover {
+    background: #af4d0b;
+}
