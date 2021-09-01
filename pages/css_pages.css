@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 8px 10%;
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -137,8 +137,7 @@ td {
 
 .isi.pemesanan button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 9px 9rem;
     background-color: rgba(169, 39, 0, 0.8);
     border: none;
@@ -159,7 +158,7 @@ td {
     max-width: 500px;
     width: 100%;
     background: #fada22ed;
-    margin: 150px auto;
+    margin: 100px auto;
     padding: 30px;
 }
 
@@ -255,4 +254,74 @@ td {
 
 .wrapper .buah_form .input_field .tombol:hover {
     background: #af4d0b;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-image: url("../images/background_buah.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-x: -1300px;
+        background-position-y: -300px;
+    }
+
+    .menu_bar nav, .menu_bar a :not(.logo_buah) {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crop {
+        display: none;
+    }
+    
+    .bungkus {
+        background-color: #edf0f1be;
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .home_title {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: #a94400;
+        padding: 1rem;
+    }
+
+    .home_title h1 {
+        font-size: 35px;
+    }
+
+    .isi {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .isi p, .isi li, .isi h4 {
+        margin: 0;
+        padding: 0 1rem;
+        font-size: 20px;
+    }
+
+    .buah_kiri img {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .buah_kanan img {
+        display: block;
+        float: none;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .isi h4, .isi th, .isi td {
+        font-size: 25px;
+    }
 }

@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-li, a, button {
+.menu_bar ul li, .menu_bar a, .menu_bar button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 8px 10%;
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
@@ -53,7 +53,7 @@ header {
     color: #a94400;
 }
 
-button {
+header button {
     padding: 9px 25px;
     background-color: rgba(169, 39, 0, 0.8);
     border: none;
@@ -62,7 +62,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button :hover{
+header button :hover{
     background-color: rgba(169, 39, 0, 0.8);
 }
 
@@ -127,4 +127,80 @@ button :hover{
 
 .isi_buah a:hover {
     color: #a94400;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-image: url("images/background_buah.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-x: -1300px;
+        background-position-y: -300px;
+    }
+
+    header nav, header a {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crop {
+        display: none;
+    }
+    
+    .bungkus {
+        background-color: #edf0f1be;
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .home_title {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: #a94400;
+        padding: 1rem;
+    }
+
+    .home_title h1 {
+        font-size: 35px;
+    }
+
+    .home_title p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .isi {
+        margin: 0;
+    }
+
+    .isi_buah {
+        margin: 2rem 0;
+        display: block;
+    }
+
+    .isi_buah img {
+        margin: 0;
+        width: 100%;
+        float: left;
+    }
+
+    .isi_buah p {
+        margin: 0;
+        padding: 0 1rem;
+        font-size: 18px;
+    }
+
+    
+    .isi_buah p a {
+        font-size: 18px;
+        padding: 0;
+        color: #fada22;
+        cursor: pointer;
+    }
 }
